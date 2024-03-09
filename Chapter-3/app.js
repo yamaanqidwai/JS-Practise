@@ -16,7 +16,7 @@ console.log(orig_num)
 
 var num = "7"
 var num2 = 23
-var num_total = num+num2
+var num_total = num + num2
 
 console.log(num_total) // instead of adding together, js concatenated both variables
 
