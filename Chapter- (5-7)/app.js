@@ -33,3 +33,65 @@ console.log(product);
 console.log(div);
 console.log(div2);
 console.log(mod);
+
+/*
+
+-----------------------------------------------------------------------------
+^                                 Chapter 6                                 ^
+-----------------------------------------------------------------------------
+
+*/
+
+// incermenting variable by 1
+
+num = 0; // initialisation
+
+num = num + 1;
+console.log("number = " + num);
+
+// OR
+num++;
+console.log("number = " + num);
+
+// OR
+++num;
+console.log("number = " + num);
+
+// output 1
+num = 0;
+var temp = num++; //temp is assigned num's original value and then num is incremented
+console.log("temp = " + temp);
+console.log("number = " + num);
+
+// output 2
+num = 0;
+var temp = ++num; //num is incremented and then temp is assigned num's value
+console.log("temp = " + temp);
+console.log("number = " + num);
+
+// decrementing variable by 1
+
+num = 0; //initialisation
+
+num = num - 1;
+console.log("number = " + num);
+
+// OR
+num--;
+console.log("number = " + num);
+
+// OR
+--num;
+console.log("number = " + num);
+
+// output 1
+num = 0;
+var temp = num--; //temp is assigned num's original value and then num is decremented
+console.log("temp = " + temp);
+console.log("number = " + num);
+
+// output 2
+num = 0;
+var temp = --num; //num is decremented and then temp is assigned num's value
+console.log("temp = " + temp);
+console.log("number = " + num);
