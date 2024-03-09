@@ -95,3 +95,20 @@ num = 0;
 var temp = --num; //num is decremented and then temp is assigned num's value
 console.log("temp = " + temp);
 console.log("number = " + num);
+
+/*
+
+-----------------------------------------------------------------------------
+^                                 Chapter 7                                 ^
+-----------------------------------------------------------------------------
+
+*/
+/*
+    Note:
+     JS FOLLOWS BODMAS BUT WE USE PARENTHESIS/BRACKETS TO ENSURE SMOOTH AND EASY TO READ CODING EXPERIENCE
+*/
+var expression = 3 * 3 - 3 / 3 + 9; // 17 // JS outputs after doing math
+console.log("Without brackets, answer = " + expression);
+
+var expression = (3 * 3 - 3) / (3 + 9); // .5
+console.log("With brackets, answer = " + expression);
