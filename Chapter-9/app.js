@@ -2,6 +2,10 @@ var question = "What is your hair color?";
 var defaultColor = "black";
 
 var hair_color = prompt(question, defaultColor);
+/*
+OR 
+var hair_color = prompt("What is your hair color?", defaultColor);
+*/
 
 if (hair_color === "black") {
   alert("Nice hair color");
@@ -23,3 +27,5 @@ if (answer === "1") {
 } else {
   alert("I prefer to keep 3");
 }
+
+var num = prompt("Enter a number")
