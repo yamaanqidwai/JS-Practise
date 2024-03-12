@@ -31,3 +31,26 @@ if (num > 100) {
   alert()(num + " is 100");
 }
 
+// // Example  3
+
+var num2 = prompt("Enter a number between 1 and 100 inclusive");
+Number(num2);
+
+// Validation
+for (var i = 0; i <= 10000000000000; i++) {
+  if (num2 > 100) {
+    alert(num2 + " is greater than 100");
+    num2 = prompt("Enter number again");
+  } else if (num2 < 1) {
+    alert(num2 + " is less than 1");
+    num2 = prompt("Enter number again");
+  } else {
+    alert(num2 + " is between 1 and 100");
+    break;
+  }
+}
+if (i < 10000000000000) {
+  alert("It took you " + i + " number of tries to get it right");
+} else {
+  alert(i + "! You have finished the number of tries granted \nRefresh the page to refill your tries");
+}
