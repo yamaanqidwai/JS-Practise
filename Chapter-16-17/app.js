@@ -122,18 +122,17 @@ var reactivitySeries = [
 ];
 
 reactivitySeries.splice(0, 2, "Potassium", "Sodium");
-
-reactivitySeries;
 console.log(reactivitySeries);
 
 reactivitySeries.splice(7, 0, "Hydrogen");
-
-reactivitySeries;
 console.log(reactivitySeries);
 
-// Removing Platinum from reactivitySeries, for O Level Syllabus
-// doesn't require you to learn it
-
+// Removing Platinum from reactivitySeries
 reactivitySeries.splice(11, 1);
-reactivitySeries;
+
+console.log(reactivitySeries);
+
+// Adding Carbon to reactivitySeries
+reactivitySeries.splice(5, 0, "Carbon");
+
 console.log(reactivitySeries);
