@@ -133,3 +133,7 @@ console.log(reactivitySeries);
 
 // Removing Platinum from reactivitySeries, for O Level Syllabus
 // doesn't require you to learn it
+
+reactivitySeries.splice(11, 1);
+reactivitySeries;
+console.log(reactivitySeries);
