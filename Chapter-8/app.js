@@ -11,10 +11,14 @@ console.log(g + b + " " + w);
 
 var complete = g + b + " " + w;
 
-
 console.log(g + b + " " + w);
 
 var num1 = "2";
 var num2 = 2;
 
 console.log(num1 + num2);
+
+var num = "2";
+num += num1;
+
+print(num);
