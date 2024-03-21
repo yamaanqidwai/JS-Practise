@@ -74,3 +74,54 @@ alert(str.length);
 -----------------------------------------------------------------------------
 
 */
+
+// Searching for a character in a string using FOR Loop
+var str = "I am a String";
+
+for (var i = 0; i < str.length; i++) {
+  if (str.slice(i, i + 1) === "a") {
+    alert("a is the " + i + 1 + " character in the string");
+  }
+}
+
+// Searching for an expression/phrase in a string using FOR Loop
+var str = "I am a String";
+
+for (var i = 0; i < str.length; i++) {
+  if (str.slice(i, i + 3) === "ing") {
+    alert("ing is the " + i + 3 + " character in the string");
+  }
+}
+
+// More efficient method
+// indexOf function finds the index of the start of expression
+// but it only does this for first instance
+// For example, in this eg, a in "am" is selected only
+
+var str = "I am a String";
+var index = str.indexOf("a");
+
+if (index > -1) {
+  alert("a is the " + index + " character in the string");
+} else {
+  alert("a is not present in the string");
+}
+
+// lastIndexOf function works the same way but runs backward
+
+var str = "I am a String";
+var index = str.lastIndexOf("a");
+
+if (index > -1) {
+  alert("a is the " + index + " character in the string");
+} else {
+  alert("a is not present in the string");
+}
+
+/*
+
+-----------------------------------------------------------------------------
+^                                Chapter 24                                 ^
+-----------------------------------------------------------------------------
+
+*/
