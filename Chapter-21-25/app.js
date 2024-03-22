@@ -125,3 +125,31 @@ if (index > -1) {
 -----------------------------------------------------------------------------
 
 */
+
+// searching for a character in a string using charAt function
+
+var str = "I am a String";
+
+for (var i = 0; i < str.length; i++) {
+  if (str.charAt(i) === "a") {
+    alert("a is the " + i + 1 + " character in the string");
+  }
+}
+
+// Getting first character of a string
+var firstChar = str.charAt(0);
+
+// Getting last character of a string
+var lastChar = str.charAt(str.length - 1);
+
+alert(firstChar);
+alert(lastChar);
+
+/*
+
+-----------------------------------------------------------------------------
+^                                Chapter 25                                 ^
+-----------------------------------------------------------------------------
+
+*/
+
