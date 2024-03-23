@@ -153,3 +153,26 @@ alert(lastChar);
 
 */
 
+// replacing an expression in a string using indexOf function
+
+var str = "I am a String + am text";
+var index = str.indexOf("am a");
+
+if (index > -1) {
+  str = str.slice(0,index) + "still am a" + str.slice(index + 4)
+  alert(str);
+} else {
+  alert("\"am a\" is not present in the string");
+}
+
+// replacing an expression in a string using replace function
+
+var str = "I am a String + am text";
+var index = str.indexOf("am a");
+
+if (index > -1) {
+  str = str.replace("am a", "still am a")
+  alert(str);
+} else {
+  alert("\"am a\" is not present in the string");
+}
