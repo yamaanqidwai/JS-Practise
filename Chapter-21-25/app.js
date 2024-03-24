@@ -153,26 +153,45 @@ alert(lastChar);
 
 */
 
+/*
+  REPLACE function syntax
+    str.replace(text,newText)
+*/
 // replacing an expression in a string using indexOf function
 
 var str = "I am a String + am text";
 var index = str.indexOf("am a");
 
 if (index > -1) {
-  str = str.slice(0,index) + "still am a" + str.slice(index + 4)
+  str = str.slice(0, index) + "still am a" + str.slice(index + 4);
   alert(str);
 } else {
-  alert("\"am a\" is not present in the string");
+  alert('"am a" is not present in the string');
 }
 
-// replacing an expression in a string using replace function
+// However there is an even better way!!
+// Just by using replace function, code becomes more efficient
 
 var str = "I am a String + am text";
 var index = str.indexOf("am a");
 
 if (index > -1) {
-  str = str.replace("am a", "still am a")
+  str = str.replace("am a", "still am a");
   alert(str);
 } else {
-  alert("\"am a\" is not present in the string");
+  alert('"am a" is not present in the string');
 }
+
+// Note: Only the first instance will be selected and replaced.
+// In order to replace all instances, global replace method must be used
+
+var str = "I am a String + am text";
+var index = str.indexOf("am a");
+
+if (index > -1) {
+  str = str.replace("am a" /g, "still am a");
+  alert(str);
+} else {
+  alert('"am a" is not present in the string');
+}
+
